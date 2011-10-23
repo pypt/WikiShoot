@@ -35,17 +35,17 @@
 		B94FDE771454E02F00B18F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B94FDE791454E02F00B18F2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B94FDE7B1454E02F00B18F2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B94FDE7F1454E02F00B18F2C /* WikiShoot-Info.plist */ = {isa = PBXFileReference; path = "WikiShoot-Info.plist"; sourceTree = "<group>"; };
+		B94FDE7F1454E02F00B18F2C /* WikiShoot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiShoot-Info.plist"; sourceTree = "<group>"; };
 		B94FDE811454E02F00B18F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B94FDE831454E02F00B18F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B94FDE851454E02F00B18F2C /* WikiShoot-Prefix.pch */ = {isa = PBXFileReference; path = "WikiShoot-Prefix.pch"; sourceTree = "<group>"; };
-		B94FDE861454E02F00B18F2C /* WSAppDelegate.h */ = {isa = PBXFileReference; path = WSAppDelegate.h; sourceTree = "<group>"; };
+		B94FDE851454E02F00B18F2C /* WikiShoot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiShoot-Prefix.pch"; sourceTree = "<group>"; };
+		B94FDE861454E02F00B18F2C /* WSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
 		B94FDE871454E02F00B18F2C /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
 		B94FDE8E1454E03000B18F2C /* WikiShootTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiShootTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94FDE8F1454E03000B18F2C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B94FDE971454E03000B18F2C /* WikiShootTests-Info.plist */ = {isa = PBXFileReference; path = "WikiShootTests-Info.plist"; sourceTree = "<group>"; };
+		B94FDE971454E03000B18F2C /* WikiShootTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiShootTests-Info.plist"; sourceTree = "<group>"; };
 		B94FDE991454E03000B18F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B94FDE9B1454E03000B18F2C /* WikiShootTests.h */ = {isa = PBXFileReference; path = WikiShootTests.h; sourceTree = "<group>"; };
+		B94FDE9B1454E03000B18F2C /* WikiShootTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikiShootTests.h; sourceTree = "<group>"; };
 		B94FDE9C1454E03000B18F2C /* WikiShootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiShootTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
