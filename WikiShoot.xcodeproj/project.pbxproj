@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B94FDE781454E02F00B18F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE771454E02F00B18F2C /* UIKit.framework */; };
+		B94FDE7A1454E02F00B18F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE791454E02F00B18F2C /* Foundation.framework */; };
+		B94FDE7C1454E02F00B18F2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE7B1454E02F00B18F2C /* CoreGraphics.framework */; };
+		B94FDE821454E02F00B18F2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B94FDE801454E02F00B18F2C /* InfoPlist.strings */; };
+		B94FDE841454E02F00B18F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FDE831454E02F00B18F2C /* main.m */; };
+		B94FDE881454E02F00B18F2C /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FDE871454E02F00B18F2C /* WSAppDelegate.m */; };
+		B94FDE901454E03000B18F2C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE8F1454E03000B18F2C /* SenTestingKit.framework */; };
+		B94FDE911454E03000B18F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE771454E02F00B18F2C /* UIKit.framework */; };
+		B94FDE921454E03000B18F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE791454E02F00B18F2C /* Foundation.framework */; };
+		B94FDE9A1454E03000B18F2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B94FDE981454E03000B18F2C /* InfoPlist.strings */; };
+		B94FDE9D1454E03000B18F2C /* WikiShootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B94FDE9C1454E03000B18F2C /* WikiShootTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B94FDE931454E03000B18F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94FDE6A1454E02F00B18F2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94FDE721454E02F00B18F2C;
+			remoteInfo = WikiShoot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B94FDE731454E02F00B18F2C /* WikiShoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiShoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94FDE771454E02F00B18F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B94FDE791454E02F00B18F2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B94FDE7B1454E02F00B18F2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B94FDE7F1454E02F00B18F2C /* WikiShoot-Info.plist */ = {isa = PBXFileReference; path = "WikiShoot-Info.plist"; sourceTree = "<group>"; };
+		B94FDE811454E02F00B18F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B94FDE831454E02F00B18F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B94FDE851454E02F00B18F2C /* WikiShoot-Prefix.pch */ = {isa = PBXFileReference; path = "WikiShoot-Prefix.pch"; sourceTree = "<group>"; };
+		B94FDE861454E02F00B18F2C /* WSAppDelegate.h */ = {isa = PBXFileReference; path = WSAppDelegate.h; sourceTree = "<group>"; };
+		B94FDE871454E02F00B18F2C /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
+		B94FDE8E1454E03000B18F2C /* WikiShootTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiShootTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94FDE8F1454E03000B18F2C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B94FDE971454E03000B18F2C /* WikiShootTests-Info.plist */ = {isa = PBXFileReference; path = "WikiShootTests-Info.plist"; sourceTree = "<group>"; };
+		B94FDE991454E03000B18F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B94FDE9B1454E03000B18F2C /* WikiShootTests.h */ = {isa = PBXFileReference; path = WikiShootTests.h; sourceTree = "<group>"; };
+		B94FDE9C1454E03000B18F2C /* WikiShootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiShootTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B94FDE701454E02F00B18F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE781454E02F00B18F2C /* UIKit.framework in Frameworks */,
+				B94FDE7A1454E02F00B18F2C /* Foundation.framework in Frameworks */,
+				B94FDE7C1454E02F00B18F2C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94FDE8A1454E03000B18F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE901454E03000B18F2C /* SenTestingKit.framework in Frameworks */,
+				B94FDE911454E03000B18F2C /* UIKit.framework in Frameworks */,
+				B94FDE921454E03000B18F2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B94FDE681454E02F00B18F2C = {
+			isa = PBXGroup;
+			children = (
+				B94FDE7D1454E02F00B18F2C /* WikiShoot */,
+				B94FDE951454E03000B18F2C /* WikiShootTests */,
+				B94FDE761454E02F00B18F2C /* Frameworks */,
+				B94FDE741454E02F00B18F2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B94FDE741454E02F00B18F2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE731454E02F00B18F2C /* WikiShoot.app */,
+				B94FDE8E1454E03000B18F2C /* WikiShootTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B94FDE761454E02F00B18F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE771454E02F00B18F2C /* UIKit.framework */,
+				B94FDE791454E02F00B18F2C /* Foundation.framework */,
+				B94FDE7B1454E02F00B18F2C /* CoreGraphics.framework */,
+				B94FDE8F1454E03000B18F2C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B94FDE7D1454E02F00B18F2C /* WikiShoot */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE861454E02F00B18F2C /* WSAppDelegate.h */,
+				B94FDE871454E02F00B18F2C /* WSAppDelegate.m */,
+				B94FDE7E1454E02F00B18F2C /* Supporting Files */,
+			);
+			path = WikiShoot;
+			sourceTree = "<group>";
+		};
+		B94FDE7E1454E02F00B18F2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE7F1454E02F00B18F2C /* WikiShoot-Info.plist */,
+				B94FDE801454E02F00B18F2C /* InfoPlist.strings */,
+				B94FDE831454E02F00B18F2C /* main.m */,
+				B94FDE851454E02F00B18F2C /* WikiShoot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B94FDE951454E03000B18F2C /* WikiShootTests */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE9B1454E03000B18F2C /* WikiShootTests.h */,
+				B94FDE9C1454E03000B18F2C /* WikiShootTests.m */,
+				B94FDE961454E03000B18F2C /* Supporting Files */,
+			);
+			path = WikiShootTests;
+			sourceTree = "<group>";
+		};
+		B94FDE961454E03000B18F2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B94FDE971454E03000B18F2C /* WikiShootTests-Info.plist */,
+				B94FDE981454E03000B18F2C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B94FDE721454E02F00B18F2C /* WikiShoot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94FDEA01454E03000B18F2C /* Build configuration list for PBXNativeTarget "WikiShoot" */;
+			buildPhases = (
+				B94FDE6F1454E02F00B18F2C /* Sources */,
+				B94FDE701454E02F00B18F2C /* Frameworks */,
+				B94FDE711454E02F00B18F2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiShoot;
+			productName = WikiShoot;
+			productReference = B94FDE731454E02F00B18F2C /* WikiShoot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B94FDE8D1454E03000B18F2C /* WikiShootTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94FDEA31454E03000B18F2C /* Build configuration list for PBXNativeTarget "WikiShootTests" */;
+			buildPhases = (
+				B94FDE891454E03000B18F2C /* Sources */,
+				B94FDE8A1454E03000B18F2C /* Frameworks */,
+				B94FDE8B1454E03000B18F2C /* Resources */,
+				B94FDE8C1454E03000B18F2C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B94FDE941454E03000B18F2C /* PBXTargetDependency */,
+			);
+			name = WikiShootTests;
+			productName = WikiShootTests;
+			productReference = B94FDE8E1454E03000B18F2C /* WikiShootTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B94FDE6A1454E02F00B18F2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B94FDE6D1454E02F00B18F2C /* Build configuration list for PBXProject "WikiShoot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B94FDE681454E02F00B18F2C;
+			productRefGroup = B94FDE741454E02F00B18F2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B94FDE721454E02F00B18F2C /* WikiShoot */,
+				B94FDE8D1454E03000B18F2C /* WikiShootTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B94FDE711454E02F00B18F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE821454E02F00B18F2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94FDE8B1454E03000B18F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE9A1454E03000B18F2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B94FDE8C1454E03000B18F2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B94FDE6F1454E02F00B18F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE841454E02F00B18F2C /* main.m in Sources */,
+				B94FDE881454E02F00B18F2C /* WSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94FDE891454E03000B18F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94FDE9D1454E03000B18F2C /* WikiShootTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B94FDE941454E03000B18F2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B94FDE721454E02F00B18F2C /* WikiShoot */;
+			targetProxy = B94FDE931454E03000B18F2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B94FDE801454E02F00B18F2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94FDE811454E02F00B18F2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B94FDE981454E03000B18F2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94FDE991454E03000B18F2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B94FDE9E1454E03000B18F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B94FDE9F1454E03000B18F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B94FDEA11454E03000B18F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiShoot/WikiShoot-Prefix.pch";
+				INFOPLIST_FILE = "WikiShoot/WikiShoot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B94FDEA21454E03000B18F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiShoot/WikiShoot-Prefix.pch";
+				INFOPLIST_FILE = "WikiShoot/WikiShoot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B94FDEA41454E03000B18F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WikiShoot.app/WikiShoot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiShoot/WikiShoot-Prefix.pch";
+				INFOPLIST_FILE = "WikiShootTests/WikiShootTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B94FDEA51454E03000B18F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WikiShoot.app/WikiShoot";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WikiShoot/WikiShoot-Prefix.pch";
+				INFOPLIST_FILE = "WikiShootTests/WikiShootTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B94FDE6D1454E02F00B18F2C /* Build configuration list for PBXProject "WikiShoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94FDE9E1454E03000B18F2C /* Debug */,
+				B94FDE9F1454E03000B18F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94FDEA01454E03000B18F2C /* Build configuration list for PBXNativeTarget "WikiShoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94FDEA11454E03000B18F2C /* Debug */,
+				B94FDEA21454E03000B18F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B94FDEA31454E03000B18F2C /* Build configuration list for PBXNativeTarget "WikiShootTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94FDEA41454E03000B18F2C /* Debug */,
+				B94FDEA51454E03000B18F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B94FDE6A1454E02F00B18F2C /* Project object */;
+}
