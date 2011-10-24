@@ -1,0 +1,6 @@
+This is a contest entry for [Wikipedia's October 2011 Coding Challenge][wocc].
+
+More to come later, so eat healthy and stay tuned!
+
+
+[wocc]: http://www.mediawiki.org/wiki/Special:ContestWelcome/October_2011_Coding_Challenge
