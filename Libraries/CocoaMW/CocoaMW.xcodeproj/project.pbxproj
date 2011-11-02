@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9705E4E1461DDF400BB2F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9705E4D1461DDF400BB2F2F /* Foundation.framework */; };
+		B9705E5E1461DE7800BB2F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705E5D1461DE7800BB2F2F /* main.m */; };
+		B9705E701461DEDF00BB2F2F /* MWAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705E6B1461DEDF00BB2F2F /* MWAPIRequest.m */; };
+		B9705E711461DEDF00BB2F2F /* MWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705E6D1461DEDF00BB2F2F /* MWClient.m */; };
+		B9705E741461E08B00BB2F2F /* CocoaMWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705E731461E08B00BB2F2F /* CocoaMWTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9705E471461DDF400BB2F2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B9705E491461DDF400BB2F2F /* CocoaMW */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CocoaMW; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9705E4D1461DDF400BB2F2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9705E5C1461DE7800BB2F2F /* CocoaMW-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaMW-Prefix.pch"; sourceTree = "<group>"; };
+		B9705E5D1461DE7800BB2F2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9705E691461DEDF00BB2F2F /* MW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MW.h; sourceTree = "<group>"; };
+		B9705E6A1461DEDF00BB2F2F /* MWAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWAPIRequest.h; sourceTree = "<group>"; };
+		B9705E6B1461DEDF00BB2F2F /* MWAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWAPIRequest.m; sourceTree = "<group>"; };
+		B9705E6C1461DEDF00BB2F2F /* MWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWClient.h; sourceTree = "<group>"; };
+		B9705E6D1461DEDF00BB2F2F /* MWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWClient.m; sourceTree = "<group>"; };
+		B9705E6E1461DEDF00BB2F2F /* MWClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWClientDelegate.h; sourceTree = "<group>"; };
+		B9705E6F1461DEDF00BB2F2F /* MWDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDefines.h; sourceTree = "<group>"; };
+		B9705E721461E08B00BB2F2F /* CocoaMWTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaMWTests.h; sourceTree = "<group>"; };
+		B9705E731461E08B00BB2F2F /* CocoaMWTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaMWTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9705E461461DDF400BB2F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9705E4E1461DDF400BB2F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9705E3E1461DDF300BB2F2F = {
+			isa = PBXGroup;
+			children = (
+				B9705E5B1461DE5900BB2F2F /* Classes */,
+				B9705E4C1461DDF400BB2F2F /* Frameworks */,
+				B9705E4A1461DDF400BB2F2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9705E4A1461DDF400BB2F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9705E491461DDF400BB2F2F /* CocoaMW */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9705E4C1461DDF400BB2F2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9705E4D1461DDF400BB2F2F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9705E5B1461DE5900BB2F2F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9705E671461DED400BB2F2F /* MW */,
+				B9705E5C1461DE7800BB2F2F /* CocoaMW-Prefix.pch */,
+				B9705E5D1461DE7800BB2F2F /* main.m */,
+				B9705E721461E08B00BB2F2F /* CocoaMWTests.h */,
+				B9705E731461E08B00BB2F2F /* CocoaMWTests.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B9705E671461DED400BB2F2F /* MW */ = {
+			isa = PBXGroup;
+			children = (
+				B9705E691461DEDF00BB2F2F /* MW.h */,
+				B9705E6A1461DEDF00BB2F2F /* MWAPIRequest.h */,
+				B9705E6B1461DEDF00BB2F2F /* MWAPIRequest.m */,
+				B9705E6C1461DEDF00BB2F2F /* MWClient.h */,
+				B9705E6D1461DEDF00BB2F2F /* MWClient.m */,
+				B9705E6E1461DEDF00BB2F2F /* MWClientDelegate.h */,
+				B9705E6F1461DEDF00BB2F2F /* MWDefines.h */,
+			);
+			name = MW;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9705E481461DDF400BB2F2F /* CocoaMW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9705E581461DDF400BB2F2F /* Build configuration list for PBXNativeTarget "CocoaMW" */;
+			buildPhases = (
+				B9705E451461DDF400BB2F2F /* Sources */,
+				B9705E461461DDF400BB2F2F /* Frameworks */,
+				B9705E471461DDF400BB2F2F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaMW;
+			productName = CocoaMW;
+			productReference = B9705E491461DDF400BB2F2F /* CocoaMW */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9705E401461DDF300BB2F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B9705E431461DDF300BB2F2F /* Build configuration list for PBXProject "CocoaMW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9705E3E1461DDF300BB2F2F;
+			productRefGroup = B9705E4A1461DDF400BB2F2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9705E481461DDF400BB2F2F /* CocoaMW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9705E451461DDF400BB2F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9705E5E1461DE7800BB2F2F /* main.m in Sources */,
+				B9705E701461DEDF00BB2F2F /* MWAPIRequest.m in Sources */,
+				B9705E711461DEDF00BB2F2F /* MWClient.m in Sources */,
+				B9705E741461E08B00BB2F2F /* CocoaMWTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B9705E561461DDF400BB2F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaMW-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B9705E571461DDF400BB2F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaMW-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B9705E591461DDF400BB2F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B9705E5A1461DDF400BB2F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9705E431461DDF300BB2F2F /* Build configuration list for PBXProject "CocoaMW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9705E561461DDF400BB2F2F /* Debug */,
+				B9705E571461DDF400BB2F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9705E581461DDF400BB2F2F /* Build configuration list for PBXNativeTarget "CocoaMW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9705E591461DDF400BB2F2F /* Debug */,
+				B9705E5A1461DDF400BB2F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9705E401461DDF300BB2F2F /* Project object */;
+}
