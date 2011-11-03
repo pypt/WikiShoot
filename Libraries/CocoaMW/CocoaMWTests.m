@@ -66,20 +66,14 @@ didSucceedCallingAPIWithRequest:(MWAPIRequest *)request
 	
 	MWLOG(@"mwClient: %@ didSucceedCallingAPIWithRequest: %@ results: %@", client, request, results);
 	
-	// Logging in?
-	if ([results objectForKey:@"login"]) {
-		
-		// Token requested?
-		if ([[[results objectForKey:@"login"] objectForKey:@"result"] isEqualToString:@"NeedToken"]) {
-			
-			// Re-login with token
-			[client loginWithUsername:MW_TEST_USERNAME
-							 password:MW_TEST_PASSWORD
-							   domain:nil
-								token:[[results objectForKey:@"login"] objectForKey:@"token"]];
-			
-			
-		}
+	NSString *token = [MWHelpers logInTokenThatWasRequestedOrNil:results];
+	if (token) {
+				
+		// Re-login with token
+		[client loginWithUsername:MW_TEST_USERNAME
+						 password:MW_TEST_PASSWORD
+						   domain:nil
+							token:token];
 	}
 }
 

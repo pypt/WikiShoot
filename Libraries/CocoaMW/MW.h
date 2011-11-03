@@ -13,5 +13,6 @@
 #import "MWClientDelegate.h"
 #import "MWClient.h"
 #import "MWAPIRequest.h"
+#import "MWHelpers.h"
 
 #endif	// '_MW_H_'

@@ -35,6 +35,7 @@
 		B9705EC11461F86900BB2F2F /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705EB31461F86900BB2F2F /* SBJsonTokeniser.m */; };
 		B9705EC21461F86900BB2F2F /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705EB51461F86900BB2F2F /* SBJsonUTF8Stream.m */; };
 		B9705EC31461F86900BB2F2F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705EB71461F86900BB2F2F /* SBJsonWriter.m */; };
+		B9705EDE1462287D00BB2F2F /* MWHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B9705EDD1462287D00BB2F2F /* MWHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,6 +111,8 @@
 		B9705EB51461F86900BB2F2F /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = "Libraries/json-framework/Classes/SBJsonUTF8Stream.m"; sourceTree = "<group>"; };
 		B9705EB61461F86900BB2F2F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "Libraries/json-framework/Classes/SBJsonWriter.h"; sourceTree = "<group>"; };
 		B9705EB71461F86900BB2F2F /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "Libraries/json-framework/Classes/SBJsonWriter.m"; sourceTree = "<group>"; };
+		B9705EDC1462287C00BB2F2F /* MWHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWHelpers.h; sourceTree = "<group>"; };
+		B9705EDD1462287D00BB2F2F /* MWHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWHelpers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				B9705E6E1461DEDF00BB2F2F /* MWClientDelegate.h */,
 				B9705E6A1461DEDF00BB2F2F /* MWAPIRequest.h */,
 				B9705E6B1461DEDF00BB2F2F /* MWAPIRequest.m */,
+				B9705EDC1462287C00BB2F2F /* MWHelpers.h */,
+				B9705EDD1462287D00BB2F2F /* MWHelpers.m */,
 			);
 			name = MW;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				B9705EC11461F86900BB2F2F /* SBJsonTokeniser.m in Sources */,
 				B9705EC21461F86900BB2F2F /* SBJsonUTF8Stream.m in Sources */,
 				B9705EC31461F86900BB2F2F /* SBJsonWriter.m in Sources */,
+				B9705EDE1462287D00BB2F2F /* MWHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
