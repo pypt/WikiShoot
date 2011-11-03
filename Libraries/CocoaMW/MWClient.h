@@ -8,6 +8,8 @@
 
 #import "MWDefines.h"
 #import "MWClientDelegate.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
 
 // FIXME ar _ yra private, ar laikinieji variables?
 
@@ -15,19 +17,30 @@
 @class MWAPIRequest;
 
 
-@interface MWClient : NSObject {
+@interface MWClient : NSObject <ASIHTTPRequestDelegate> {
 	
 	@public
 	
 	NSString *apiURL;
 	id<MWClientDelegate> delegate;
-	BOOL isLoggedIn;
 	NSTimeInterval timeoutInterval;
+	BOOL isLoggedIn;
 	
 	@private
 	
 	// Network operation in progress
+	// FIXME thread-safety
 	BOOL networkOperationIsInProgress;
+	
+	// Current request that is being handled
+	MWAPIRequest *currentAPIRequest;
+	
+	// Uses ASIHTTPRequest for the uploads
+	ASIFormDataRequest *httpRequest;
+	
+	// HTTP request / response lengths
+	long long httpUploadSize;
+	long long httpDownloadSize;
 	
 }
 
@@ -37,27 +50,73 @@
 @property (nonatomic) NSTimeInterval timeoutInterval;
 
 // Initialize with API URL
-- (id)initWithAPIURL:(NSString *)_apiURL;
-- (id)initWithAPIURL:(NSString *)_apiURL
+- (id)initWithApiURL:(NSString *)_apiURL;
+- (id)initWithApiURL:(NSString *)_apiURL
 			delegate:(id<MWClientDelegate>)_delegate;
 
-// Log in
+// Call API
+- (void)callAPIWithRequest:(MWAPIRequest *)request;
+
+// Cancel any ongoing request
+- (void)cancelOngoingAPIRequest;
+
+// (Helper) Log in
 - (void)loginWithUsername:(NSString *)username
 				 password:(NSString *)password;
 
-// Log out
+- (void)loginWithUsername:(NSString *)username
+				 password:(NSString *)password
+				   domain:(NSString *)domain
+					token:(NSString *)token;
+
+// (Helper) Log out
 - (void)logout;
 
-// Call API
-- (void)callAPIWithRequest:(MWAPIRequest *)query;
+// (Helper) Retrieve upload token
+- (void)retrieveUploadToken;
 
-// Upload file helper
-- (void)uploadFileWithTitle:(NSString *)title
-					summary:(NSString *)summary
-					   data:(NSData *)data;
+// (Helper) Upload file from memory
+- (void)uploadFileFromData:(NSData *)fileData
+				  basename:(NSString *)basename
+			targetFilename:(NSString *)targetFilename
+			   uploadToken:(NSString *)uploadToken
+				  pageText:(NSString *)pageText
+			 uploadComment:(NSString *)uploadComment
+				 watchPage:(BOOL)watchPage
+			ignoreWarnings:(BOOL)ignoreWarnings;
 
-- (void)uploadFileWithTitle:(NSString *)title
-					summary:(NSString *)summary
-				   filePath:(NSString *)filePath;
+- (void)uploadFileFromData:(NSData *)fileData
+				  basename:(NSString *)basename
+			targetFilename:(NSString *)targetFilename
+			   uploadToken:(NSString *)uploadToken
+				  pageText:(NSString *)pageText;
+
+// (Helper) Upload file from filesystem
+- (void)uploadFileFromFilesystem:(NSString *)filePath
+				  targetFilename:(NSString *)targetFilename
+					 uploadToken:(NSString *)uploadToken
+						pageText:(NSString *)pageText
+				   uploadComment:(NSString *)uploadComment
+					   watchPage:(BOOL)watchPage
+				  ignoreWarnings:(BOOL)ignoreWarnings;
+
+- (void)uploadFileFromFilesystem:(NSString *)filePath
+				  targetFilename:(NSString *)targetFilename
+					 uploadToken:(NSString *)uploadToken
+						pageText:(NSString *)pageText;
+
+// (Helper) Upload file from URL
+- (void)uploadFileFromURL:(NSString *)fileURL
+		   targetFilename:(NSString *)targetFilename
+			  uploadToken:(NSString *)uploadToken
+				 pageText:(NSString *)pageText
+			uploadComment:(NSString *)uploadComment
+				watchPage:(BOOL)watchPage
+		   ignoreWarnings:(BOOL)ignoreWarnings;
+
+- (void)uploadFileFromURL:(NSString *)fileURL
+		   targetFilename:(NSString *)targetFilename
+			  uploadToken:(NSString *)uploadToken
+				 pageText:(NSString *)pageText;
 
 @end

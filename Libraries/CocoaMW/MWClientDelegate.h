@@ -18,22 +18,6 @@
 
 @optional
 
-// Log in
-- (void)mwClientDidStartLoggingIn:(MWClient *)client;
-
-- (void)mwClientDidSucceedLoggingIn:(MWClient *)client;
-
-- (void)mwClient:(MWClient *)client
-didFailLoggingInWithError:(NSError *)error;
-
-// Log out
-- (void)mwClientDidStartLoggingOut:(MWClient *)client;
-
-- (void)mwClientDidSucceedLoggingOut:(MWClient *)client;
-
-- (void)mwClient:(MWClient *)client
-didFailLoggingOutWithError:(NSError *)error;
-
 // API call
 - (void)mwClient:(MWClient *)client
 didStartCallingAPIWithRequest:(MWAPIRequest *)query;
@@ -44,12 +28,18 @@ didStartCallingAPIWithRequest:(MWAPIRequest *)query;
 	  outOfBytes:(NSUInteger)bytesAvailable
 	 withRequest:(MWAPIRequest *)request;
 
+// Big POST requests might want to use an uplink progress report
 - (void)mwClient:(MWClient *)client
-didSucceedCallingAPIWithRequest:(MWAPIRequest *)query
-		 results:(NSObject *)results;
+   receivedBytes:(NSUInteger)bytesSent
+	  outOfBytes:(NSUInteger)bytesAvailable
+	 withRequest:(MWAPIRequest *)request;
 
 - (void)mwClient:(MWClient *)client
-didFailCallingAPIWithRequest:(MWAPIRequest *)
+didSucceedCallingAPIWithRequest:(MWAPIRequest *)query
+		 results:(NSDictionary *)results /* SBJson result */;
+
+- (void)mwClient:(MWClient *)client
+didFailCallingAPIWithRequest:(MWAPIRequest *)query
 		   error:(NSError *)error;
 
 @end

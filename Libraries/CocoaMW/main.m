@@ -14,11 +14,19 @@ int main (int argc, const char * argv[])
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	// Run the tests
-	CocoaMWTests *tests = [[CocoaMWTests alloc] init];
-	[tests run];
-	MW_RELEASE_SAFELY(tests);
+	// make sure the application singleton has been instantiated
+	NSApplication *application = [NSApplication sharedApplication];
 	
+	// instantiate our application delegate
+	CocoaMWTests *applicationDelegate = [[[CocoaMWTests alloc] init] autorelease];
+	
+	// assign our delegate to the NSApplication
+	[application setDelegate:applicationDelegate];
+	
+	// call the run method of our application
+	[application run];
+	
+	[pool drain];
 	MW_RELEASE_SAFELY(pool);
 	return 0;
 }

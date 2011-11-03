@@ -13,22 +13,38 @@
 	
 	@public
 	NSString *action;
+	NSInteger tag;
 	
 	@private
-	NSMutableDictionary *properties;
+	
+	// NSString -> (NSArray|NSString) dictionary (key -> parameter(s))
+	NSMutableDictionary *parameters;
+	
+	// NSString -> NSString dictionary (key -> file path)
+	NSMutableDictionary *attachments;
+	
+	// Temporary files
+	NSMutableArray *temporaryFiles;
 }
 
 @property (nonatomic, retain) NSString *action;
+@property (nonatomic) NSInteger tag;
 
-// NSDictionary-like methods for setting/getting properties
-- (NSUInteger)count;
-- (id)objectForKey:(id)aKey;
-- (NSEnumerator *)keyEnumerator;
-- (void)setObject:(id)anObject forKey:(id)aKey;
-- (void)removeObjectForKey:(id)aKey;
++ (MWAPIRequest *)requestWithAction:(NSString *)action;
 
-// Returns a string of key=value&key=value&...&key=value parameters for HTTP request
-// Used by MWClient
-- (NSString *)HTTPRequestString;
+// NSDictionary-like methods for setting/getting parameters
+- (NSUInteger)parameterCount;
+- (id)parameterForKey:(NSString *)aKey;
+- (NSEnumerator *)parameterKeyEnumerator;
+- (void)setParameter:(id)parameter forKey:(NSString *)key;
+- (void)removeParameterForKey:(NSString *)aKey;
+
+// NSDictionary-like methods for setting/getting file attachments
+- (NSUInteger)attachmentCount;
+- (NSString *)attachmentPathForKey:(NSString *)key;
+- (NSEnumerator *)attachmentKeyEnumerator;
+- (void)setAttachmentPath:(NSString *)attachmentPath forKey:(NSString *)key;
+- (void)setAttachmentData:(NSData *)attachmentData withBasename:(NSString *)basename forKey:(NSString *)key;
+- (void)removeAttachmentForKey:(NSString *)key;
 
 @end
