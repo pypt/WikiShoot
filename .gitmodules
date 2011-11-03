@@ -7,3 +7,9 @@
 [submodule "Libraries/GWMarks/Libraries/TouchXML"]
 	path = Libraries/GWMarks/Libraries/TouchXML
 	url = https://github.com/TouchCode/TouchXML.git
+[submodule "Libraries/ILGeoNames"]
+	path = Libraries/ILGeoNames
+	url = https://github.com/InfiniteLoopDK/ILGeoNames.git
+[submodule "Libraries/JSONKit"]
+	path = Libraries/JSONKit
+	url = https://github.com/johnezang/JSONKit.git
