@@ -4,3 +4,6 @@
 [submodule "Libraries/CocoaMW/Libraries/json-framework"]
 	path = Libraries/CocoaMW/Libraries/json-framework
 	url = https://github.com/stig/json-framework.git
+[submodule "Libraries/GWMarks/Libraries/TouchXML"]
+	path = Libraries/GWMarks/Libraries/TouchXML
+	url = https://github.com/TouchCode/TouchXML.git

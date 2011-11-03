@@ -24,7 +24,6 @@
 	NSString *apiURL;
 	id<MWClientDelegate> delegate;
 	NSTimeInterval timeoutInterval;
-	BOOL isLoggedIn;
 	
 	@private
 	
@@ -46,7 +45,6 @@
 
 @property (nonatomic, retain) NSString *apiURL;
 @property (nonatomic, retain) id<MWClientDelegate> delegate;
-@property (nonatomic) BOOL isLoggedIn;
 @property (nonatomic) NSTimeInterval timeoutInterval;
 
 // Initialize with API URL

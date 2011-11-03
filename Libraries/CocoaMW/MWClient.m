@@ -184,7 +184,6 @@ didFailCallingAPIWithRequest:apiRequest
 
 @synthesize apiURL;
 @synthesize delegate;
-@synthesize isLoggedIn;
 @synthesize timeoutInterval;
 
 
@@ -196,7 +195,6 @@ didFailCallingAPIWithRequest:apiRequest
 		apiURL = nil;
 		delegate = nil;
 		networkOperationIsInProgress = NO;
-		isLoggedIn = NO;
 		timeoutInterval = 30.0;
 		httpRequest = nil;
 		httpUploadSize = 0;

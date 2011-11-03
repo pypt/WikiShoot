@@ -134,7 +134,6 @@
 		B9705E3E1461DDF300BB2F2F = {
 			isa = PBXGroup;
 			children = (
-				B9705E9C1461EE7F00BB2F2F /* libz.dylib */,
 				B9705E5B1461DE5900BB2F2F /* Classes */,
 				B9705E4C1461DDF400BB2F2F /* Frameworks */,
 				B9705E4A1461DDF400BB2F2F /* Products */,
@@ -152,6 +151,7 @@
 		B9705E4C1461DDF400BB2F2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9705E9C1461EE7F00BB2F2F /* libz.dylib */,
 				B9705E9A1461EE6500BB2F2F /* CoreServices.framework */,
 				B9705E981461EE5B00BB2F2F /* SystemConfiguration.framework */,
 				B9705E751461E36700BB2F2F /* AppKit.framework */,
