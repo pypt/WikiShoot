@@ -1,9 +1,9 @@
-[submodule "Libraries/CocoaMW/Libraries/asi-http-request"]
-	path = Libraries/CocoaMW/Libraries/asi-http-request
-	url = https://github.com/pokeb/asi-http-request.git
-[submodule "Libraries/ILGeoNames"]
-	path = Libraries/ILGeoNames
+[submodule "Libraries/ArticlesAround/Libraries/ILGeoNames"]
+	path = Libraries/ArticlesAround/Libraries/ILGeoNames
 	url = https://github.com/InfiniteLoopDK/ILGeoNames.git
-[submodule "Libraries/JSONKit"]
-	path = Libraries/JSONKit
+[submodule "Libraries/ArticlesAround/Libraries/JSONKit"]
+	path = Libraries/ArticlesAround/Libraries/JSONKit
 	url = https://github.com/johnezang/JSONKit.git
+[submodule "Libraries/ArticlesAround/Libraries/CocoaMW"]
+	path = Libraries/ArticlesAround/Libraries/CocoaMW
+	url = https://github.com/pypt/CocoaMW.git
