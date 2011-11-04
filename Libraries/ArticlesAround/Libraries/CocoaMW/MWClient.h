@@ -44,7 +44,7 @@
 }
 
 @property (nonatomic, retain) NSString *apiURL;
-@property (nonatomic, retain) id<MWClientDelegate> delegate;
+@property (nonatomic, assign) id<MWClientDelegate> delegate;
 @property (nonatomic) NSTimeInterval timeoutInterval;
 
 // Initialize with API URL

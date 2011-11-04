@@ -8,8 +8,7 @@
 
 #import "MWClient.h"
 #import "MWAPIRequest.h"
-#import "SBJson.h"
-#import "NSObject+SBJson.h"
+#import "JSONKit.h"
 
 
 #pragma mark - Private methods
@@ -99,7 +98,7 @@ didStartCallingAPIWithRequest:currentAPIRequest];
 		return;
 	}
 	
-	id responseJSON = [responseString JSONValue];
+	id responseJSON = [responseString objectFromJSONString];
 	if (! responseJSON) {
 		MWWARN(@"Unable to parse response JSON: %@", responseString);
 		[self requestFailed:request];
