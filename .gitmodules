@@ -1,12 +1,6 @@
 [submodule "Libraries/CocoaMW/Libraries/asi-http-request"]
 	path = Libraries/CocoaMW/Libraries/asi-http-request
 	url = https://github.com/pokeb/asi-http-request.git
-[submodule "Libraries/CocoaMW/Libraries/json-framework"]
-	path = Libraries/CocoaMW/Libraries/json-framework
-	url = https://github.com/stig/json-framework.git
-[submodule "Libraries/GWMarks/Libraries/TouchXML"]
-	path = Libraries/GWMarks/Libraries/TouchXML
-	url = https://github.com/TouchCode/TouchXML.git
 [submodule "Libraries/ILGeoNames"]
 	path = Libraries/ILGeoNames
 	url = https://github.com/InfiniteLoopDK/ILGeoNames.git
