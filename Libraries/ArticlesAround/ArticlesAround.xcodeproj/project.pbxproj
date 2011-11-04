@@ -53,7 +53,6 @@
 		B98D6F4314634C46009D4D49 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		B98D6F4614634D64009D4D49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B98D6F4814634D69009D4D49 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		B98D6F5214634DF4009D4D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ILGeoNames.strings; sourceTree = "<group>"; };
 		B98D6F5314634DF4009D4D49 /* ILGeoNamesLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILGeoNamesLookup.h; path = Libraries/ILGeoNames/Source/ILGeoNamesLookup.h; sourceTree = SOURCE_ROOT; };
 		B98D6F5414634DF4009D4D49 /* ILGeoNamesLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILGeoNamesLookup.m; path = Libraries/ILGeoNames/Source/ILGeoNamesLookup.m; sourceTree = SOURCE_ROOT; };
 		B98D6F5814634E1E009D4D49 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -166,21 +165,11 @@
 			isa = PBXGroup;
 			children = (
 				B98D6F5614634E1E009D4D49 /* JSONKit */,
-				B98D6F5014634DF4009D4D49 /* en.lproj */,
 				B98D6F5314634DF4009D4D49 /* ILGeoNamesLookup.h */,
 				B98D6F5414634DF4009D4D49 /* ILGeoNamesLookup.m */,
 			);
 			name = ILGeoNames;
 			sourceTree = "<group>";
-		};
-		B98D6F5014634DF4009D4D49 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				B98D6F5114634DF4009D4D49 /* ILGeoNames.strings */,
-			);
-			name = en.lproj;
-			path = Libraries/ILGeoNames/Source/en.lproj;
-			sourceTree = SOURCE_ROOT;
 		};
 		B98D6F5614634E1E009D4D49 /* JSONKit */ = {
 			isa = PBXGroup;
@@ -304,17 +293,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B98D6F5114634DF4009D4D49 /* ILGeoNames.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B98D6F5214634DF4009D4D49 /* en */,
-			);
-			name = ILGeoNames.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B98D6F3614634BD7009D4D49 /* Debug */ = {

@@ -20,7 +20,7 @@
 
 // API call
 - (void)mwClient:(MWClient *)client
-didStartCallingAPIWithRequest:(MWAPIRequest *)query;
+didStartCallingAPIWithRequest:(MWAPIRequest *)request;
 
 // Big POST requests might want to use an uplink progress report
 - (void)mwClient:(MWClient *)client
@@ -35,11 +35,11 @@ didStartCallingAPIWithRequest:(MWAPIRequest *)query;
 	 withRequest:(MWAPIRequest *)request;
 
 - (void)mwClient:(MWClient *)client
-didSucceedCallingAPIWithRequest:(MWAPIRequest *)query
-		 results:(NSDictionary *)results /* SBJson result */;
+didSucceedCallingAPIWithRequest:(MWAPIRequest *)request
+		 results:(NSDictionary *)results;
 
 - (void)mwClient:(MWClient *)client
-didFailCallingAPIWithRequest:(MWAPIRequest *)query
+didFailCallingAPIWithRequest:(MWAPIRequest *)request
 		   error:(NSError *)error;
 
 @end

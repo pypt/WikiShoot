@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AAClientArticle.h"
 #import "MWClientDelegate.h"
 #import "ILGeoNamesLookup.h"
 
@@ -17,6 +18,7 @@ typedef enum AAClientError {
 	kAAClientEmptyRequestError = 1,
 	kAAClientEmptyMediaWikiApiURLError = 2,
 	kAAClientEmptyGeoNamesUsernameError = 3,
+	kAAClientGeoNamesRequestError = 4,
 } AAClientError;
 
 extern NSString *const kAAClientErrorDomain;
