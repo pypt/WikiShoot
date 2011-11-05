@@ -19,6 +19,8 @@ typedef enum AAClientError {
 	kAAClientEmptyMediaWikiApiURLError = 2,
 	kAAClientEmptyGeoNamesUsernameError = 3,
 	kAAClientGeoNamesRequestError = 4,
+	kAAClientMediaWikiAPINetworkError = 5,
+	kAAClientMediaWikiAPIResponseError = 6,
 } AAClientError;
 
 extern NSString *const kAAClientErrorDomain;
@@ -106,6 +108,10 @@ failedSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
 	
 	// Currently processed request
 	AAClientRequest *currentRequest;
+	
+	// Current temporary results (array of AAClientArticle objects to be refined later)
+	NSMutableArray *currentResultArticles;
+	
 }
 
 @property (nonatomic, assign) id<AAClientDelegate> delegate;

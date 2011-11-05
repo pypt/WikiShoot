@@ -36,4 +36,34 @@
 	
 }
 
+
+#pragma mark - AAClientDelegate methods
+
+- (void)aaClient:(AAClient *)aaClient
+startedSearchingForNearbyArticlesForRequest:(AAClientRequest *)request {
+	
+	MWLOG(@"aaClient: %@ startedSearchingForNearbyArticlesForRequest: %@", aaClient, request);
+}
+
+- (void)aaClient:(AAClient *)aaClient
+startedRefiningNearbyArticlesForRequest:(AAClientRequest *)request {
+	
+	MWLOG(@"aaClient: %@ startedRefiningNearbyArticlesForRequest: %@", aaClient, request);
+}
+
+- (void)aaClient:(AAClient *)aaClient
+succeededSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
+		articles:(NSArray *)articles /* array of AAClientArticle items */ {
+	
+	MWLOG(@"aaClient: %@ succeededSearchingForNearbyArticlesForRequest: %@ articles: %@", aaClient, request, articles);
+}
+
+- (void)aaClient:(AAClient *)aaClient
+failedSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
+		   error:(NSError *)error {
+	
+	MWLOG(@"aaClient: %@ failedSearchingForNearbyArticlesForRequest: %@ error: %@", aaClient, request, error);
+}
+
+
 @end

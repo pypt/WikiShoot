@@ -7,3 +7,6 @@
 [submodule "Libraries/ArticlesAround/Libraries/CocoaMW"]
 	path = Libraries/ArticlesAround/Libraries/CocoaMW
 	url = https://github.com/pypt/CocoaMW.git
+[submodule "Libraries/ArticlesAround/Libraries/asi-http-request"]
+	path = Libraries/ArticlesAround/Libraries/asi-http-request
+	url = https://github.com/pokeb/asi-http-request.git
