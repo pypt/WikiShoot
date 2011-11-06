@@ -158,6 +158,8 @@
 		B98D6F3E14634C10009D4D49 /* ArticlesAround */ = {
 			isa = PBXGroup;
 			children = (
+				B98D6F7514634EA2009D4D49 /* asi-http-request */,
+				B98D6F5614634E1E009D4D49 /* JSONKit */,
 				B98D6F5C14634E4C009D4D49 /* CocoaMW */,
 				B98D6F4514634CAB009D4D49 /* ILGeoNames */,
 				B98D6F3F14634C29009D4D49 /* AAAbstractClient.h */,
@@ -176,7 +178,6 @@
 		B98D6F4514634CAB009D4D49 /* ILGeoNames */ = {
 			isa = PBXGroup;
 			children = (
-				B98D6F5614634E1E009D4D49 /* JSONKit */,
 				B98D6F5314634DF4009D4D49 /* ILGeoNamesLookup.h */,
 				B98D6F5414634DF4009D4D49 /* ILGeoNamesLookup.m */,
 			);
@@ -196,7 +197,6 @@
 		B98D6F5C14634E4C009D4D49 /* CocoaMW */ = {
 			isa = PBXGroup;
 			children = (
-				B98D6F7514634EA2009D4D49 /* asi-http-request */,
 				B98D6F6914634E86009D4D49 /* MW.h */,
 				B98D6F6A14634E86009D4D49 /* MWAPIRequest.h */,
 				B98D6F6B14634E86009D4D49 /* MWAPIRequest.m */,
