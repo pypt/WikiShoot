@@ -35,6 +35,15 @@
 		B97BFD971466363C008EA914 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFD961466363C008EA914 /* CFNetwork.framework */; };
 		B97BFD9914663646008EA914 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFD9814663646008EA914 /* libz.dylib */; };
 		B97BFD9B14663683008EA914 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFD9A14663683008EA914 /* MobileCoreServices.framework */; };
+		B97BFD9E146638DE008EA914 /* WSMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B97BFD9D146638DE008EA914 /* WSMainVC.m */; };
+		B97BFDA514664412008EA914 /* page-curl.png in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDA114664412008EA914 /* page-curl.png */; };
+		B97BFDA614664412008EA914 /* page-curl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDA214664412008EA914 /* page-curl@2x.png */; };
+		B97BFDA714664412008EA914 /* user-location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDA314664412008EA914 /* user-location-arrow.png */; };
+		B97BFDA814664412008EA914 /* user-location-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDA414664412008EA914 /* user-location-arrow@2x.png */; };
+		B97BFDAA14664AAD008EA914 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFDA914664AAD008EA914 /* MapKit.framework */; };
+		B97BFDAC14664AB6008EA914 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFDAB14664AB6008EA914 /* CoreLocation.framework */; };
+		B97BFDB114665629008EA914 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDB014665629008EA914 /* UserDefaults.plist */; };
+		B97BFDB8146669C5008EA914 /* WSArticleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +105,18 @@
 		B97BFD961466363C008EA914 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B97BFD9814663646008EA914 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B97BFD9A14663683008EA914 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B97BFD9C146638DE008EA914 /* WSMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMainVC.h; sourceTree = "<group>"; };
+		B97BFD9D146638DE008EA914 /* WSMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMainVC.m; sourceTree = "<group>"; };
+		B97BFDA114664412008EA914 /* page-curl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "page-curl.png"; path = "Resources/Icons/page-curl.png"; sourceTree = "<group>"; };
+		B97BFDA214664412008EA914 /* page-curl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "page-curl@2x.png"; path = "Resources/Icons/page-curl@2x.png"; sourceTree = "<group>"; };
+		B97BFDA314664412008EA914 /* user-location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user-location-arrow.png"; path = "Resources/Icons/user-location-arrow.png"; sourceTree = "<group>"; };
+		B97BFDA414664412008EA914 /* user-location-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user-location-arrow@2x.png"; path = "Resources/Icons/user-location-arrow@2x.png"; sourceTree = "<group>"; };
+		B97BFDA914664AAD008EA914 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B97BFDAB14664AB6008EA914 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B97BFDAD146653EA008EA914 /* WSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSConfiguration.h; sourceTree = "<group>"; };
+		B97BFDB014665629008EA914 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UserDefaults.plist; path = Resources/UserDefaults.plist; sourceTree = "<group>"; };
+		B97BFDB6146669C4008EA914 /* WSArticleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSArticleAnnotation.h; sourceTree = "<group>"; };
+		B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSArticleAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97BFDAC14664AB6008EA914 /* CoreLocation.framework in Frameworks */,
+				B97BFDAA14664AAD008EA914 /* MapKit.framework in Frameworks */,
 				B97BFD9B14663683008EA914 /* MobileCoreServices.framework in Frameworks */,
 				B97BFD9914663646008EA914 /* libz.dylib in Frameworks */,
 				B97BFD971466363C008EA914 /* CFNetwork.framework in Frameworks */,
@@ -120,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				B94FDE7D1454E02F00B18F2C /* WikiShoot */,
+				B94FDE7E1454E02F00B18F2C /* Supporting Files */,
+				B97BFD9F146643F9008EA914 /* Resources */,
 				B94FDE761454E02F00B18F2C /* Frameworks */,
 				B94FDE741454E02F00B18F2C /* Products */,
 			);
@@ -136,6 +161,8 @@
 		B94FDE761454E02F00B18F2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B97BFDAB14664AB6008EA914 /* CoreLocation.framework */,
+				B97BFDA914664AAD008EA914 /* MapKit.framework */,
 				B97BFD9A14663683008EA914 /* MobileCoreServices.framework */,
 				B97BFD9814663646008EA914 /* libz.dylib */,
 				B97BFD961466363C008EA914 /* CFNetwork.framework */,
@@ -153,7 +180,11 @@
 				B97BFD4F146633C9008EA914 /* ArticlesAround */,
 				B94FDE861454E02F00B18F2C /* WSAppDelegate.h */,
 				B94FDE871454E02F00B18F2C /* WSAppDelegate.m */,
-				B94FDE7E1454E02F00B18F2C /* Supporting Files */,
+				B97BFDAD146653EA008EA914 /* WSConfiguration.h */,
+				B97BFD9C146638DE008EA914 /* WSMainVC.h */,
+				B97BFD9D146638DE008EA914 /* WSMainVC.m */,
+				B97BFDB6146669C4008EA914 /* WSArticleAnnotation.h */,
+				B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */,
 			);
 			path = WikiShoot;
 			sourceTree = "<group>";
@@ -167,6 +198,7 @@
 				B94FDE851454E02F00B18F2C /* WikiShoot-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = WikiShoot;
 			sourceTree = "<group>";
 		};
 		B97BFD4F146633C9008EA914 /* ArticlesAround */ = {
@@ -252,6 +284,26 @@
 			name = "asi-http-request";
 			sourceTree = "<group>";
 		};
+		B97BFD9F146643F9008EA914 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B97BFDA014664404008EA914 /* Icons */,
+				B97BFDB014665629008EA914 /* UserDefaults.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B97BFDA014664404008EA914 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B97BFDA114664412008EA914 /* page-curl.png */,
+				B97BFDA214664412008EA914 /* page-curl@2x.png */,
+				B97BFDA314664412008EA914 /* user-location-arrow.png */,
+				B97BFDA414664412008EA914 /* user-location-arrow@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B94FDE821454E02F00B18F2C /* InfoPlist.strings in Resources */,
+				B97BFDA514664412008EA914 /* page-curl.png in Resources */,
+				B97BFDA614664412008EA914 /* page-curl@2x.png in Resources */,
+				B97BFDA714664412008EA914 /* user-location-arrow.png in Resources */,
+				B97BFDA814664412008EA914 /* user-location-arrow@2x.png in Resources */,
+				B97BFDB114665629008EA914 /* UserDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +390,8 @@
 				B97BFD8F146634BE008EA914 /* ASIInputStream.m in Sources */,
 				B97BFD90146634BE008EA914 /* ASINetworkQueue.m in Sources */,
 				B97BFD93146634CA008EA914 /* Reachability.m in Sources */,
+				B97BFD9E146638DE008EA914 /* WSMainVC.m in Sources */,
+				B97BFDB8146669C5008EA914 /* WSArticleAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +433,6 @@
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
@@ -397,7 +455,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "WikiShoot/WikiShoot-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -424,7 +482,6 @@
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
@@ -447,7 +504,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "WikiShoot/WikiShoot-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

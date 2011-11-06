@@ -76,6 +76,6 @@ extern NSString *const kAAClientErrorDomain;
 - (id)initWithDelegate:(id<AAClientDelegate>)initDelegate;
 
 // Main searcher
-- (id)searchForNearbyArticlesForRequest:(AAClientRequest *)request;
+- (void)searchForNearbyArticlesForRequest:(AAClientRequest *)request;
 
 @end

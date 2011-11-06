@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class WSMainVC;
 
-@interface WSAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@interface WSAppDelegate : UIResponder <UIApplicationDelegate> {
+	
+	@public
+	UIWindow *window;
+	UINavigationController *mainNC;
+	WSMainVC *mainVC;
+
+}
+
+@property (nonatomic, retain) UIWindow *window;
 
 @end

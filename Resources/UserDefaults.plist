@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WSPlaceMapDefaultLat</key>
+	<string>37.786966</string>
+	<key>WSPlaceMapDefaultLon</key>
+	<string>-122.39956</string>
+	<key>WSPlaceMapDefaultLatDelta</key>
+	<string>0.01</string>
+	<key>WSPlaceMapDefaultLonDelta</key>
+	<string>0.01</string>
+	<key>WSPlaceMapDefaultMapType</key>
+	<string>Standard</string>
+</dict>
+</plist>

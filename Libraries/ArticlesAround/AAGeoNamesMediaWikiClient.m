@@ -211,7 +211,7 @@ didSucceedCallingAPIWithRequest:(MWAPIRequest *)request
 	if (delegate && [delegate respondsToSelector:@selector(aaClient:succeededSearchingForNearbyArticlesForRequest:articles:)]) {
 		
 		[delegate aaClient:self
-succeededSearchingForNearbyArticlesForRequest:[currentRequest autorelease]
+succeededSearchingForNearbyArticlesForRequest:currentRequest
 				  articles:[NSArray arrayWithArray:currentResultArticles]];
 	}
 	
@@ -321,6 +321,7 @@ startedSearchingForNearbyArticlesForRequest:request];
 		return;
 	}
 	
+	[geocoder cancel];
 	[geocoder findNearbyWikipediaForLatitude:request.latitude
 								   longitude:request.longitude
 									 maxRows:request.maxRows
