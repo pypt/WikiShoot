@@ -1,64 +1,19 @@
 //
-//  AAClient.m
+//  AAGeoNamesMediaWikiClient.m
 //  ArticlesAround
 //
-//  Created by Linas Valiukas on 2011-11-04.
+//  Created by Linas Valiukas on 2011-11-06.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AAClient.h"
+#import "AAGeoNamesMediaWikiClient.h"
 #import "MW.h"
 #import "JSONKit.h"
 
 
-NSString *const kAAClientErrorDomain = @"lt.pypt.aaclient";
+#pragma mark - Private methods
 
-
-@implementation AAClientRequest
-
-@synthesize latitude;
-@synthesize longitude;
-@synthesize maxRows;
-@synthesize radius;
-@synthesize languageCode;
-
-
-- (id)init {
-	
-	if ((self = [super init])) {
-		latitude = 0;
-		longitude = 0;
-		maxRows = 0;
-		radius = 0;
-		languageCode = nil;
-	}
-	
-	return self;
-}
-
-+ (AAClientRequest *)requestWithLatitude:(double)latitude
-							   longitude:(double)longitude
-								 maxRows:(unsigned short)maxRows
-								  radius:(double)radius
-							languageCode:(NSString *)languageCode {
-	
-	AAClientRequest *request = [[[AAClientRequest alloc] init] autorelease];
-	[request setLatitude:latitude];
-	[request setLongitude:longitude];
-	[request setMaxRows:maxRows];
-	[request setRadius:radius];
-	[request setLanguageCode:languageCode];
-	
-	return request;
-}
-
-@end
-
-
-
-#pragma mark - AAClient private methods
-
-@interface AAClient (Private)
+@interface AAGeoNamesMediaWikiClient (Private)
 
 - (void)informDelegateAboutFailedSearcherWithErrorCode:(AAClientError)errorCode
 											  userInfo:(NSDictionary *)userInfo;
@@ -83,7 +38,7 @@ didFailCallingAPIWithRequest:(MWAPIRequest *)request
 
 @end
 
-@implementation AAClient (Private)
+@implementation AAGeoNamesMediaWikiClient (Private)
 
 - (void)informDelegateAboutFailedSearcherWithErrorCode:(AAClientError)errorCode
 											  userInfo:(NSDictionary *)userInfo {
@@ -176,7 +131,7 @@ startedRefiningNearbyArticlesForRequest:currentRequest];
 	
 	MW_RELEASE_SAFELY(currentResultArticles);
 	currentResultArticles = [[NSMutableArray alloc] init];
-		
+	
 	NSString *title;
 	NSString *type;
 	NSString *wikipediaURL;
@@ -219,7 +174,7 @@ startedRefiningNearbyArticlesForRequest:currentRequest];
 																	   summary:summary]];
 		}
 	}
-		
+	
 	// Start 'refining' results via MediaWiki API
 	[self refineNearbyArticlesUsingMediaWiki];
 }
@@ -259,7 +214,7 @@ didSucceedCallingAPIWithRequest:(MWAPIRequest *)request
 succeededSearchingForNearbyArticlesForRequest:[currentRequest autorelease]
 				  articles:[NSArray arrayWithArray:currentResultArticles]];
 	}
-
+	
 	MW_RELEASE_SAFELY(currentRequest);
 	MW_RELEASE_SAFELY(currentResultArticles);
 }
@@ -279,18 +234,14 @@ didFailCallingAPIWithRequest:(MWAPIRequest *)request
 @end
 
 
-#pragma mark - AAClient public methods
 
+#pragma mark - Public methods
 
-@implementation AAClient
-
-@synthesize delegate;
-
+@implementation AAGeoNamesMediaWikiClient
 
 - (id)init {
 	
 	if ((self = [super init])) {
-		delegate = nil;
 		currentRequest = nil;
 		currentResultArticles = nil;
 		
@@ -304,8 +255,8 @@ didFailCallingAPIWithRequest:(MWAPIRequest *)request
 }
 
 - (id)initWithDelegate:(id<AAClientDelegate>)initDelegate
-		 mediaWikiApiURL:(NSString *)mediaWikiApiURL
-		geoNamesUsername:(NSString *)geoNamesUsername {	
+	   mediaWikiApiURL:(NSString *)mediaWikiApiURL
+	  geoNamesUsername:(NSString *)geoNamesUsername {	
 	
 	if ((self = [self init])) {
 		[self setMediaWikiApiURL:mediaWikiApiURL];
@@ -355,7 +306,7 @@ startedSearchingForNearbyArticlesForRequest:request];
 	}
 	
 	currentRequest = [request retain];
-					 
+	
 	if (! [mwClient apiURL]) {
 		MWERR(@"MediaWiki API URL was not set, aborting");
 		[self informDelegateAboutFailedSearcherWithErrorCode:kAAClientEmptyMediaWikiApiURLError
@@ -369,7 +320,7 @@ startedSearchingForNearbyArticlesForRequest:request];
 													userInfo:nil];		
 		return;
 	}
-
+	
 	[geocoder findNearbyWikipediaForLatitude:request.latitude
 								   longitude:request.longitude
 									 maxRows:request.maxRows

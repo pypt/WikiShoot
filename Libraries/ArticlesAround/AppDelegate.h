@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
-#import "AAClient.h"
+#import "AAGeoNamesMediaWikiClient.h"
 
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, AAClientDelegate> {
 	
 	@private
 	
-	AAClient *articlesAroundClient;
+	AAGeoNamesMediaWikiClient *articlesAroundClient;
 }
 
 - (void)run;

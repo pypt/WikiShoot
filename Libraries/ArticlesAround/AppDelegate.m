@@ -21,7 +21,7 @@
 
 - (void)run {
 	
-	articlesAroundClient = [[AAClient alloc] init];
+	articlesAroundClient = [[AAGeoNamesMediaWikiClient alloc] init];
 	[articlesAroundClient setDelegate:self];
 	[articlesAroundClient setMediaWikiApiURL:@"http://en.wikipedia.org/w/api.php"];
 	[articlesAroundClient setGeoNamesUsername:@"wikishoot"];
@@ -39,26 +39,26 @@
 
 #pragma mark - AAClientDelegate methods
 
-- (void)aaClient:(AAClient *)aaClient
+- (void)aaClient:(AAAbstractClient *)aaClient
 startedSearchingForNearbyArticlesForRequest:(AAClientRequest *)request {
 	
 	MWLOG(@"aaClient: %@ startedSearchingForNearbyArticlesForRequest: %@", aaClient, request);
 }
 
-- (void)aaClient:(AAClient *)aaClient
+- (void)aaClient:(AAAbstractClient *)aaClient
 startedRefiningNearbyArticlesForRequest:(AAClientRequest *)request {
 	
 	MWLOG(@"aaClient: %@ startedRefiningNearbyArticlesForRequest: %@", aaClient, request);
 }
 
-- (void)aaClient:(AAClient *)aaClient
+- (void)aaClient:(AAAbstractClient *)aaClient
 succeededSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
 		articles:(NSArray *)articles /* array of AAClientArticle items */ {
 	
 	MWLOG(@"aaClient: %@ succeededSearchingForNearbyArticlesForRequest: %@ articles: %@", aaClient, request, articles);
 }
 
-- (void)aaClient:(AAClient *)aaClient
+- (void)aaClient:(AAAbstractClient *)aaClient
 failedSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
 		   error:(NSError *)error {
 	

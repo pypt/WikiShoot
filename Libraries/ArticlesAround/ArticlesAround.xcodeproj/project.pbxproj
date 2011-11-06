@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B964D5FC14660EFA003A0045 /* AAClientRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B964D5FB14660EFA003A0045 /* AAClientRequest.m */; };
+		B964D5FF14660FD4003A0045 /* AAGeoNamesMediaWikiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B964D5FE14660FD4003A0045 /* AAGeoNamesMediaWikiClient.m */; };
 		B98D6F2E14634BD6009D4D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D6F2D14634BD6009D4D49 /* Foundation.framework */; };
 		B98D6F3D14634C07009D4D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D6F3C14634C07009D4D49 /* main.m */; };
-		B98D6F4114634C29009D4D49 /* AAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D6F4014634C29009D4D49 /* AAClient.m */; };
+		B98D6F4114634C29009D4D49 /* AAAbstractClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D6F4014634C29009D4D49 /* AAAbstractClient.m */; };
 		B98D6F4414634C46009D4D49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B98D6F4314634C46009D4D49 /* AppDelegate.m */; };
 		B98D6F4714634D64009D4D49 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D6F4614634D64009D4D49 /* AppKit.framework */; };
 		B98D6F4914634D69009D4D49 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D6F4814634D69009D4D49 /* CoreServices.framework */; };
@@ -43,12 +45,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B964D5F614660EAC003A0045 /* AAClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAClientDelegate.h; sourceTree = SOURCE_ROOT; };
+		B964D5FA14660EF9003A0045 /* AAClientRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAClientRequest.h; sourceTree = SOURCE_ROOT; };
+		B964D5FB14660EFA003A0045 /* AAClientRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAClientRequest.m; sourceTree = SOURCE_ROOT; };
+		B964D5FD14660FD4003A0045 /* AAGeoNamesMediaWikiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAGeoNamesMediaWikiClient.h; sourceTree = SOURCE_ROOT; };
+		B964D5FE14660FD4003A0045 /* AAGeoNamesMediaWikiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAGeoNamesMediaWikiClient.m; sourceTree = SOURCE_ROOT; };
 		B98D6F2914634BD6009D4D49 /* ArticlesAround */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArticlesAround; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98D6F2D14634BD6009D4D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B98D6F3B14634C07009D4D49 /* ArticlesAround-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ArticlesAround-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		B98D6F3C14634C07009D4D49 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		B98D6F3F14634C29009D4D49 /* AAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAClient.h; sourceTree = SOURCE_ROOT; };
-		B98D6F4014634C29009D4D49 /* AAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAClient.m; sourceTree = SOURCE_ROOT; };
+		B98D6F3F14634C29009D4D49 /* AAAbstractClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAbstractClient.h; sourceTree = SOURCE_ROOT; };
+		B98D6F4014634C29009D4D49 /* AAAbstractClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAbstractClient.m; sourceTree = SOURCE_ROOT; };
 		B98D6F4214634C46009D4D49 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		B98D6F4314634C46009D4D49 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		B98D6F4614634D64009D4D49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -153,10 +160,15 @@
 			children = (
 				B98D6F5C14634E4C009D4D49 /* CocoaMW */,
 				B98D6F4514634CAB009D4D49 /* ILGeoNames */,
-				B98D6F3F14634C29009D4D49 /* AAClient.h */,
-				B98D6F4014634C29009D4D49 /* AAClient.m */,
+				B98D6F3F14634C29009D4D49 /* AAAbstractClient.h */,
+				B98D6F4014634C29009D4D49 /* AAAbstractClient.m */,
+				B964D5F614660EAC003A0045 /* AAClientDelegate.h */,
+				B964D5FA14660EF9003A0045 /* AAClientRequest.h */,
+				B964D5FB14660EFA003A0045 /* AAClientRequest.m */,
 				B98D6F96146353C5009D4D49 /* AAClientArticle.h */,
 				B98D6F97146353C5009D4D49 /* AAClientArticle.m */,
+				B964D5FD14660FD4003A0045 /* AAGeoNamesMediaWikiClient.h */,
+				B964D5FE14660FD4003A0045 /* AAGeoNamesMediaWikiClient.m */,
 			);
 			name = ArticlesAround;
 			sourceTree = "<group>";
@@ -274,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98D6F3D14634C07009D4D49 /* main.m in Sources */,
-				B98D6F4114634C29009D4D49 /* AAClient.m in Sources */,
+				B98D6F4114634C29009D4D49 /* AAAbstractClient.m in Sources */,
 				B98D6F4414634C46009D4D49 /* AppDelegate.m in Sources */,
 				B98D6F5514634DF4009D4D49 /* ILGeoNamesLookup.m in Sources */,
 				B98D6F5B14634E1E009D4D49 /* JSONKit.m in Sources */,
@@ -289,6 +301,8 @@
 				B9A2192C1465C1C600017537 /* ASIHTTPRequest.m in Sources */,
 				B9A2192D1465C1C600017537 /* ASIInputStream.m in Sources */,
 				B9A2192E1465C1C600017537 /* ASINetworkQueue.m in Sources */,
+				B964D5FC14660EFA003A0045 /* AAClientRequest.m in Sources */,
+				B964D5FF14660FD4003A0045 /* AAGeoNamesMediaWikiClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
