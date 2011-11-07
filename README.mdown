@@ -1,6 +1,47 @@
+# WikiShoot
+
+**WikiShoot** is an iOS (iPhone and iPad) application allowing you to take photos of unphotographed locations and upload them to Wikimedia Commons (or some other MediaWiki deployment).
+
 This is a contest entry for [Wikipedia's October 2011 Coding Challenge][wocc].
 
-More to come later, so eat healthy and stay tuned!
+## Mockup
+
+WikiShoot development follows [this rough UI mockup][wikishoot-mockup] showing how it should work.
+
+## Status
+
+Implemented:
+
+* Minimal MediaWiki Cocoa API client, [CocoaMW][cocoamw].
+* Unphotographed locations map (using GeoNames + MediaWiki APIs).
+* Image picker.
+
+Not implemented:
+
+* "Choose from list" unphotographed locations functionality.
+* Ability to choose a "thing" (not a location) to photograph.
+* Image upload functionality.
+* License chooser.
+* Form to enter image's data.
+* "User statistics" view.
+
+## How to run
+
+- Download and install Xcode 4 and iOS SDK 5. The [Mac App Store][xcode-ios-sdk] version has been tested, but other versions might work too.
+- Clone this repository.
+- Open `WikiShoot.xcodeproj`
+- Build and run.
+
+## 3rd party code
+
+See `Libraries/` and `Libraries/ArticlesAround/Libraries/`. All of the 3rd party code is GPL-compatible.
+
+## License
+
+Apache 2.0, see `LICENSE`.
 
 
+[cocoamw]: https://github.com/pypt/CocoaMW
+[wikishoot-mockup]: http://stuff.pypt.lt/wikishoot-mockup-20111029.pdf
 [wocc]: http://www.mediawiki.org/wiki/Special:ContestWelcome/October_2011_Coding_Challenge
+[xcode-ios-sdk]: http://itunes.apple.com/lt/app/xcode/id448457090?mt=12
