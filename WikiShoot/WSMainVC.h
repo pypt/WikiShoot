@@ -33,6 +33,9 @@
 	// Map of places
 	MKMapView *placesMapView;
 	
+	// On the user location start, zoom to the first found location
+	BOOL firstUserLocationZoomed;
+	
 	// "Articles around" searcher
 	AAGeoNamesMediaWikiClient *aaClient;
 }

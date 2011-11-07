@@ -287,9 +287,10 @@ NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepi
 	[placesMapView setShowsUserLocation:(!placesMapView.showsUserLocation)];
 	
 	if (placesMapView.showsUserLocation) {
-		[userLocationBarButton setTintColor:[UIColor blueColor]];
+		[userLocationBarButton setStyle:UIBarButtonItemStyleDone];
+		firstUserLocationZoomed = NO;
 	} else {
-		[userLocationBarButton setTintColor:nil];
+		[userLocationBarButton setStyle:UIBarButtonItemStylePlain];
 	}
 }
 
@@ -320,31 +321,56 @@ NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepi
 
 #pragma mark MKMapViewDelegate methods
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+	
+	if (! firstUserLocationZoomed) {
+		
+		MKCoordinateSpan span;
+		span.latitudeDelta = placesMapView.region.span.latitudeDelta;
+		span.longitudeDelta = placesMapView.region.span.longitudeDelta;
+		
+		CLLocationCoordinate2D location = userLocation.coordinate;
+		
+		MKCoordinateRegion region;
+		region.span = span;
+		region.center = location;
+		
+		[placesMapView setRegion:region
+						animated:YES];
+		[placesMapView regionThatFits:region];
+		
+		firstUserLocationZoomed = YES;
+	}
+}
+
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
 	
 	// Zoom to user location
 	for (MKAnnotationView *annotationView in views) {
 		if (annotationView.annotation == placesMapView.userLocation) {
-			MKCoordinateRegion region;
-			MKCoordinateSpan span;
+			
+			if (! firstUserLocationZoomed) {
+				MKCoordinateSpan span;
+				span.latitudeDelta = placesMapView.region.span.latitudeDelta;
+				span.longitudeDelta = placesMapView.region.span.longitudeDelta;
 
-			span.latitudeDelta = placesMapView.region.span.latitudeDelta;
-			span.longitudeDelta = placesMapView.region.span.longitudeDelta;
+				CLLocationCoordinate2D location = placesMapView.userLocation.coordinate;
 
-			CLLocationCoordinate2D location = placesMapView.userLocation.coordinate;
+				MKCoordinateRegion region;
+				region.span = span;
+				region.center = location;
 
-			location = placesMapView.userLocation.location.coordinate;
-
-			region.span = span;
-			region.center = location;
-
-			[placesMapView setRegion:region
-							animated:YES];
-			[placesMapView regionThatFits:region];
+				[placesMapView setRegion:region
+								animated:YES];
+				[placesMapView regionThatFits:region];
+				
+				firstUserLocationZoomed = YES;
+			}
 		}
     }
 }
 
+// Do not search for locations when the zoom is too big because it doesn't make sense
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
 		
 	// Store to user defaults

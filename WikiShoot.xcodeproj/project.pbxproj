@@ -44,6 +44,7 @@
 		B97BFDAC14664AB6008EA914 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BFDAB14664AB6008EA914 /* CoreLocation.framework */; };
 		B97BFDB114665629008EA914 /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDB014665629008EA914 /* UserDefaults.plist */; };
 		B97BFDB8146669C5008EA914 /* WSArticleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */; };
+		B97BFDBA146672C6008EA914 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B97BFDB9146672C6008EA914 /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,7 @@
 		B97BFDB014665629008EA914 /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UserDefaults.plist; path = Resources/UserDefaults.plist; sourceTree = "<group>"; };
 		B97BFDB6146669C4008EA914 /* WSArticleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSArticleAnnotation.h; sourceTree = "<group>"; };
 		B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSArticleAnnotation.m; sourceTree = "<group>"; };
+		B97BFDB9146672C6008EA914 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 			children = (
 				B97BFDA014664404008EA914 /* Icons */,
 				B97BFDB014665629008EA914 /* UserDefaults.plist */,
+				B97BFDB9146672C6008EA914 /* Entitlements.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				B97BFDA714664412008EA914 /* user-location-arrow.png in Resources */,
 				B97BFDA814664412008EA914 /* user-location-arrow@2x.png in Resources */,
 				B97BFDB114665629008EA914 /* UserDefaults.plist in Resources */,
+				B97BFDBA146672C6008EA914 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,12 +417,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -469,12 +477,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -518,6 +530,8 @@
 		B94FDEA11454E03000B18F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
