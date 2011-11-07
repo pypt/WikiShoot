@@ -16,13 +16,13 @@ Implemented:
 * Unphotographed locations map (using GeoNames + MediaWiki APIs).
 * Image picker.
 
-Not implemented:
+Not (yet) implemented:
 
+* Image upload functionality.
+* Form to enter image's data.
 * "Choose from list" unphotographed locations functionality.
 * Ability to choose a "thing" (not a location) to photograph.
-* Image upload functionality.
 * License chooser.
-* Form to enter image's data.
 * "User statistics" view.
 
 ## How to run
@@ -31,6 +31,14 @@ Not implemented:
 - Clone this repository.
 - Open `WikiShoot.xcodeproj`
 - Build and run.
+
+## Compatibility
+
+(Should be) compatible with iOS 3.0 and up.
+
+## Screenshots
+
+See the [screenshot gallery][wikishoot-screenshots].
 
 ## 3rd party code
 
@@ -43,5 +51,6 @@ Apache 2.0, see `LICENSE`.
 
 [cocoamw]: https://github.com/pypt/CocoaMW
 [wikishoot-mockup]: http://stuff.pypt.lt/wikishoot-mockup-20111029.pdf
+[wikishoot-screenshots]: http://imgur.com/a/BHqid
 [wocc]: http://www.mediawiki.org/wiki/Special:ContestWelcome/October_2011_Coding_Challenge
 [xcode-ios-sdk]: http://itunes.apple.com/lt/app/xcode/id448457090?mt=12
