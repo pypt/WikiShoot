@@ -49,5 +49,10 @@
 //
 #define WS_ARTICLES_TO_FIND_AROUND_LANGUAGE_CODE	@"en"
 
+//
+// JPEG compression quality
+//
+#define WS_JPEG_COMPRESSION_QUALITY	90.0
+
 
 #endif	// '_WS_CONFIGURATION_H_'

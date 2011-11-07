@@ -2,7 +2,7 @@
 
 Licensed under [WTFPL][http://en.wikipedia.org/wiki/WTFPL], according to the [author][http://blog.shuningbian.net/2011/01/ios-toolbar-pagecurl-icon.html].
 
-# `user-location-arrow.svg`
+# `camera.svg`, `camera-upload.svg`, `user-location-arrow.svg`
 
 Created by Joseph Wain (see http://penandthink.com) at and probably downloaded from http://glyphish.com
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90026C71468724E002FBE03 /* WSNewPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B90026C61468724E002FBE03 /* WSNewPhotoVC.m */; };
+		B90026D314688393002FBE03 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B90026D114688393002FBE03 /* camera.png */; };
+		B90026D414688393002FBE03 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90026D214688393002FBE03 /* camera@2x.png */; };
+		B900279814689308002FBE03 /* WSPreUploadPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B900279714689308002FBE03 /* WSPreUploadPhotoVC.m */; };
+		B949194E14689DBE000899AD /* camera-upload.png in Resources */ = {isa = PBXBuildFile; fileRef = B949194C14689DBE000899AD /* camera-upload.png */; };
+		B949194F14689DBE000899AD /* camera-upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B949194D14689DBE000899AD /* camera-upload@2x.png */; };
+		B949195614689F94000899AD /* WSUploadPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B949195514689F94000899AD /* WSUploadPhotoVC.m */; };
 		B94FDE781454E02F00B18F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE771454E02F00B18F2C /* UIKit.framework */; };
 		B94FDE7A1454E02F00B18F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE791454E02F00B18F2C /* Foundation.framework */; };
 		B94FDE7C1454E02F00B18F2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94FDE7B1454E02F00B18F2C /* CoreGraphics.framework */; };
@@ -48,6 +55,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90026C51468724E002FBE03 /* WSNewPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSNewPhotoVC.h; sourceTree = "<group>"; };
+		B90026C61468724E002FBE03 /* WSNewPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSNewPhotoVC.m; sourceTree = "<group>"; };
+		B90026D114688393002FBE03 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Resources/Icons/camera.png; sourceTree = "<group>"; };
+		B90026D214688393002FBE03 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera@2x.png"; path = "Resources/Icons/camera@2x.png"; sourceTree = "<group>"; };
+		B90027201468862D002FBE03 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B900272214688638002FBE03 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B900279614689308002FBE03 /* WSPreUploadPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPreUploadPhotoVC.h; sourceTree = "<group>"; };
+		B900279714689308002FBE03 /* WSPreUploadPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPreUploadPhotoVC.m; sourceTree = "<group>"; };
+		B949194C14689DBE000899AD /* camera-upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-upload.png"; path = "Resources/Icons/camera-upload.png"; sourceTree = "<group>"; };
+		B949194D14689DBE000899AD /* camera-upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-upload@2x.png"; path = "Resources/Icons/camera-upload@2x.png"; sourceTree = "<group>"; };
+		B949195414689F94000899AD /* WSUploadPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSUploadPhotoVC.h; sourceTree = "<group>"; };
+		B949195514689F94000899AD /* WSUploadPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSUploadPhotoVC.m; sourceTree = "<group>"; };
 		B94FDE731454E02F00B18F2C /* WikiShoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiShoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94FDE771454E02F00B18F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B94FDE791454E02F00B18F2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +182,8 @@
 		B94FDE761454E02F00B18F2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B900272214688638002FBE03 /* MessageUI.framework */,
+				B90027201468862D002FBE03 /* AssetsLibrary.framework */,
 				B97BFDAB14664AB6008EA914 /* CoreLocation.framework */,
 				B97BFDA914664AAD008EA914 /* MapKit.framework */,
 				B97BFD9A14663683008EA914 /* MobileCoreServices.framework */,
@@ -187,6 +208,12 @@
 				B97BFD9D146638DE008EA914 /* WSMainVC.m */,
 				B97BFDB6146669C4008EA914 /* WSArticleAnnotation.h */,
 				B97BFDB7146669C4008EA914 /* WSArticleAnnotation.m */,
+				B90026C51468724E002FBE03 /* WSNewPhotoVC.h */,
+				B90026C61468724E002FBE03 /* WSNewPhotoVC.m */,
+				B900279614689308002FBE03 /* WSPreUploadPhotoVC.h */,
+				B900279714689308002FBE03 /* WSPreUploadPhotoVC.m */,
+				B949195414689F94000899AD /* WSUploadPhotoVC.h */,
+				B949195514689F94000899AD /* WSUploadPhotoVC.m */,
 			);
 			path = WikiShoot;
 			sourceTree = "<group>";
@@ -299,6 +326,10 @@
 		B97BFDA014664404008EA914 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				B949194C14689DBE000899AD /* camera-upload.png */,
+				B949194D14689DBE000899AD /* camera-upload@2x.png */,
+				B90026D114688393002FBE03 /* camera.png */,
+				B90026D214688393002FBE03 /* camera@2x.png */,
 				B97BFDA114664412008EA914 /* page-curl.png */,
 				B97BFDA214664412008EA914 /* page-curl@2x.png */,
 				B97BFDA314664412008EA914 /* user-location-arrow.png */,
@@ -341,6 +372,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = B94FDE681454E02F00B18F2C;
 			productRefGroup = B94FDE741454E02F00B18F2C /* Products */;
@@ -364,6 +396,10 @@
 				B97BFDA814664412008EA914 /* user-location-arrow@2x.png in Resources */,
 				B97BFDB114665629008EA914 /* UserDefaults.plist in Resources */,
 				B97BFDBA146672C6008EA914 /* Entitlements.plist in Resources */,
+				B90026D314688393002FBE03 /* camera.png in Resources */,
+				B90026D414688393002FBE03 /* camera@2x.png in Resources */,
+				B949194E14689DBE000899AD /* camera-upload.png in Resources */,
+				B949194F14689DBE000899AD /* camera-upload@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +432,9 @@
 				B97BFD93146634CA008EA914 /* Reachability.m in Sources */,
 				B97BFD9E146638DE008EA914 /* WSMainVC.m in Sources */,
 				B97BFDB8146669C5008EA914 /* WSArticleAnnotation.m in Sources */,
+				B90026C71468724E002FBE03 /* WSNewPhotoVC.m in Sources */,
+				B900279814689308002FBE03 /* WSPreUploadPhotoVC.m in Sources */,
+				B949195614689F94000899AD /* WSUploadPhotoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

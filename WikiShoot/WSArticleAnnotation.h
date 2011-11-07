@@ -8,6 +8,7 @@
 
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+@class AAClientArticle;
 
 
 @interface WSArticleAnnotation : NSObject <MKAnnotation> {
@@ -16,11 +17,14 @@
 	CLLocationCoordinate2D coordinate; 
 	NSString *title; 
 	NSString *subtitle;
+	
+	AAClientArticle *article;
 }
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, retain) AAClientArticle *article;
 
 - (BOOL)isEqual:(id)anObject;
 

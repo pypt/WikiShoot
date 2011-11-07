@@ -9,6 +9,7 @@
 #import "WSMainVC.h"
 #import "WSConfiguration.h"
 #import "WSArticleAnnotation.h"
+#import "WSNewPhotoVC.h"
 
 
 // Object type UISegmentedControl segments
@@ -24,6 +25,10 @@ CGFloat const kWSMainVCToolbarButtonWidth = 30.0;
 // View tags (for checking if it has been added to the hierarchy)
 NSInteger const kWSMainVCToolbarViewTag = 1;
 NSInteger const kWSMainVCMapViewTag = 2;
+
+// Map callout accessory view tags
+NSInteger const kWSMainVCLeftCalloutAccessoryViewTag = 3;
+NSInteger const kWSMainVCRightCalloutAccessoryViewTag = 4;
 
 // Map view article pin identifier
 NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepin";
@@ -129,10 +134,13 @@ NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepi
 		case kWSMainVCObjectTypesPlacesSegment:
 			toolbarItems = [NSArray arrayWithObjects:
 							userLocationBarButton,
-							flexSpaceLeftBarButton,
-							objectTypesSegControlBarButton,
-							flexSpaceRightBarButton,
-							mapTypeBarButton,
+							
+							// FIXME disabled temporary
+							//flexSpaceLeftBarButton,
+							//objectTypesSegControlBarButton,
+							//flexSpaceRightBarButton,
+							//mapTypeBarButton,
+							
 							nil];
 			break;
 			
@@ -417,7 +425,10 @@ NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepi
 	[pinView setPinColor:MKPinAnnotationColorRed];
 	[pinView setCanShowCallout:YES];
 	[pinView setAnimatesDrop:YES];
-	[pinView setRightCalloutAccessoryView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
+	
+	UIButton *rightCallout = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+	[rightCallout setTag:kWSMainVCRightCalloutAccessoryViewTag];
+	[pinView setRightCalloutAccessoryView:rightCallout];
 
 	return pinView;
 }
@@ -426,6 +437,22 @@ NSString *const kKWMainVCMapArticlePinIdentifier = @"lt.pypt.wikishoot.articlepi
 	
 	MWLOG(@"map accessory tapped: %@", control);
 	
+	if ([control tag] == kWSMainVCRightCalloutAccessoryViewTag) {
+		
+		// Article
+		AAClientArticle *article = [(WSArticleAnnotation *)view.annotation article];
+		if (! article) {
+			MWERR(@"Unknown article");
+			return;
+		}
+		
+		// Open "New photo" dialog
+		WSNewPhotoVC *newPhotoVC = [[WSNewPhotoVC alloc] initWithArticleTitle:[article title]
+																 mediaWikiURL:[article wikipediaURL]];
+		[self.navigationController pushViewController:newPhotoVC
+											 animated:YES];
+		[newPhotoVC release];
+	}
 }
 
 
@@ -457,6 +484,7 @@ succeededSearchingForNearbyArticlesForRequest:(AAClientRequest *)request
 		WSArticleAnnotation *annotation = [[[WSArticleAnnotation alloc] init] autorelease];
 		[annotation setTitle:article.title];
 		[annotation setSubtitle:article.type];
+		[annotation setArticle:article];
 		CLLocationCoordinate2D annotationCoordinate;
 		annotationCoordinate.latitude = article.latitude;
 		annotationCoordinate.longitude = article.longitude;

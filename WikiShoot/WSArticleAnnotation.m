@@ -13,14 +13,8 @@
 @synthesize coordinate;
 @synthesize title;
 @synthesize subtitle;
+@synthesize article;
 
-
-- (void)dealloc {
-	MW_RELEASE_SAFELY(title);
-	MW_RELEASE_SAFELY(subtitle);
-	
-	[super dealloc];
-}
 
 - (BOOL)isEqual:(id)anObject {
 	
