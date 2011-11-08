@@ -28,7 +28,8 @@ Not (yet) implemented:
 ## How to run
 
 - Download and install Xcode 4 and iOS SDK 5. The [Mac App Store][xcode-ios-sdk] version has been tested, but other versions might work too.
-- Clone this repository.
+- Clone this repository: `git clone https://github.com/pypt/WikiShoot.git`
+- Enter the `WikiShoot` directory and fetch the submodules: `git submodule update --init`
 - Open `WikiShoot.xcodeproj`
 - Build and run.
 
