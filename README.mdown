@@ -2,7 +2,7 @@
 
 **WikiShoot** is an iOS (iPhone and iPad) application allowing you to take photos of unphotographed locations and upload them to Wikimedia Commons (or some other MediaWiki deployment).
 
-This is a contest entry for [Wikipedia's October 2011 Coding Challenge][wocc].
+This was a contest entry for [Wikipedia's October 2011 Coding Challenge][wocc].
 
 ## Mockup
 
@@ -35,7 +35,7 @@ Not (yet) implemented:
 
 ## Compatibility
 
-(Should be) compatible with iOS 3.0 and up.
+(Should be) compatible with iOS 4.3 and up.
 
 ## Screenshots
 
